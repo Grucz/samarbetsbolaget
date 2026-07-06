@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – boka möte eller ställ en fråga | Samarbetsbolaget</title>
+  <meta name="description" content="Kontakta Samarbetsbolaget. Skriv till Patrick Gruczkun eller Syrene Hägelmark, boka ett kostnadsfritt första möte eller ställ en fråga om våra tjänster.">
+  <link rel="canonical" href="https://samarbetsbolaget.se/kontakt">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kontakta oss | Samarbetsbolaget">
+  <meta property="og:description" content="Skriv till Patrick eller Syrene, eller boka ett kostnadsfritt första möte.">
+  <meta property="og:url" content="https://samarbetsbolaget.se/kontakt">
+  <meta property="og:image" content="https://samarbetsbolaget.se/hero-team.jpg">
+  <meta property="og:locale" content="sv_SE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Samarbetsbolaget – till startsidan">
+        <img src="logo.png" alt="Samarbetsbolaget" width="2000" height="594">
+      </a>
+      <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Hem</a>
+        <a href="tjanster.html">Tjänster</a>
+        <a href="vi-ar.html">Vi är</a>
+        <a href="resurser.html">Resurser</a>
+        <a href="referenser.html">Referenser</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="kontakt.html" class="btn btn--sm">Boka möte</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow"><svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="8.5" width="17" height="7" rx="3.5" transform="rotate(45 12 12)" stroke="currentColor" stroke-width="2"/><rect x="3.5" y="8.5" width="17" height="7" rx="3.5" transform="rotate(-45 12 12)" stroke="currentColor" stroke-width="2"/></svg>Kontakt</span>
+      <h1>Kontakta oss</h1>
+      <p class="lead">Har du frågor eller vill veta mer om våra tjänster? Hör gärna av dig så återkommer vi så snart som möjligt.</p>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:24px;">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Formulär -->
+        <div class="form-card">
+          <h2 style="font-size:1.6rem;">Skicka ett meddelande</h2>
+          <p style="color:var(--muted);margin-bottom:24px;">Fyll i formuläret nedan så återkommer vi inom 24 timmar.</p>
+
+          <form id="kontaktform" name="kontakt-patrick" method="POST" action="/tack"
+                data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kontakt-patrick">
+            <p class="hp">
+              <label>Fyll inte i detta fält om du är människa: <input name="bot-field"></label>
+            </p>
+
+            <div class="field">
+              <label for="mottagare">Vem vill du kontakta? *</label>
+              <select id="mottagare" name="mottagare" required>
+                <option value="patrick">Patrick Gruczkun</option>
+                <option value="syrene">Syrene Hägelmark</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="namn">Namn *</label>
+              <input id="namn" name="namn" type="text" placeholder="Ditt namn" required>
+            </div>
+
+            <div class="field">
+              <label for="epost">E-post *</label>
+              <input id="epost" name="epost" type="email" placeholder="din@email.se" required>
+            </div>
+
+            <div class="field">
+              <label for="telefon">Telefon</label>
+              <input id="telefon" name="telefon" type="tel" placeholder="070-123 45 67">
+            </div>
+
+            <div class="field">
+              <label for="meddelande">Meddelande *</label>
+              <textarea id="meddelande" name="meddelande" rows="6" placeholder="Berätta om ditt ärende..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--lg" style="width:100%;justify-content:center;">Skicka meddelande</button>
+          </form>
+        </div>
+
+        <!-- Kontaktinfo -->
+        <div>
+          <div class="info-card">
+            <h3>Syrene Hägelmark</h3>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <div><div class="lbl">E-post</div><a href="mailto:syrene@samarbetsbolaget.se">syrene@samarbetsbolaget.se</a></div>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><div class="lbl">Telefon</div><a href="tel:+46708486475">070-848 64 75</a></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Patrick Gruczkun</h3>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <div><div class="lbl">E-post</div><a href="mailto:patrick@samarbetsbolaget.se">patrick@samarbetsbolaget.se</a></div>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><div class="lbl">Telefon</div><a href="tel:+46736858741">073-685 87 41</a></div>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <div><div class="lbl">LinkedIn</div><a href="https://www.linkedin.com/in/gruczkun" target="_blank" rel="noopener noreferrer">Patrick på LinkedIn</a></div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Postadress</h3>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><p style="margin:0;">Mellanvågsgatan 5<br>421 33 Västra Frölunda</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Dolt registrerings-formulär så Netlify känner igen mottagaren Syrene.
+       Skickas aldrig av en människa; finns bara så att notiser till Syrene fungerar. -->
+  <form name="kontakt-syrene" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="kontakt-syrene">
+    <input name="bot-field">
+    <input name="mottagare">
+    <input name="namn">
+    <input name="epost">
+    <input name="telefon">
+    <textarea name="meddelande"></textarea>
+  </form>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Samarbetsbolaget</h4>
+          <p>Vi arbetar med interkulturell kompetens, moderering och ledningsgruppsutveckling.</p>
+        </div>
+        <div>
+          <h4>Snabblänkar</h4>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="tjanster.html">Tjänster</a></li>
+            <li><a href="vi-ar.html">Vi är</a></li>
+            <li><a href="resurser.html">Resurser</a></li>
+            <li><a href="referenser.html">Referenser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:syrene@samarbetsbolaget.se">syrene@samarbetsbolaget.se</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+46708486475">070-848 64 75</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:patrick@samarbetsbolaget.se">patrick@samarbetsbolaget.se</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+46736858741">073-685 87 41</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year">2026</span> Samarbetsbolaget. Alla rättigheter förbehållna.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
