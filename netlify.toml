@@ -4,6 +4,66 @@
 [build]
   publish = "."
 
+# ---------------------------------------------------------------------------
+# Omdirigeringar från den gamla webbplatsen (WordPress) till nya sidor.
+# 301 = permanent flytt, vilket bevarar SEO-värdet från gamla adresser.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/the-human-element/"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/moderering/"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/medling/"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/vi-gor/"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/nar-ni-vill-lara-ut/"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/tot-i-interkulturell-kompetens/*"
+  to = "/tjanster"
+  status = 301
+
+[[redirects]]
+  from = "/varderingsovningar/"
+  to = "/resurser"
+  status = 301
+
+[[redirects]]
+  from = "/boktips/"
+  to = "/resurser"
+  status = 301
+
+[[redirects]]
+  from = "/pf/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/index.php"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/samarbetsbolagets_lilla_orangea.pdf"
+  to = "/"
+  status = 301
+
 # Säkerhets- och cachehuvuden
 [[headers]]
   for = "/*"
